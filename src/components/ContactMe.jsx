@@ -29,17 +29,17 @@ const ContactMe = () => {
             <input
               type="text"
               placeholder="Your Name"
-              className="block w-full rounded-md shadow-sm focus:ring focus:outline-none focus:ring-green bg-darkSlate py-2 pl-3 text-white"
+              className="block w-full rounded-md shadow-sm focus:ring focus:outline-none focus:ring-green bg-lightNavy py-2 pl-3 text-white"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="block w-full rounded-md shadow-sm focus:ring focus:outline-none focus:ring-green bg-darkSlate py-2 pl-3 text-white"
+              className="block w-full rounded-md shadow-sm focus:ring focus:outline-none focus:ring-green bg-lightNavy py-2 pl-3 text-white"
             />
             <textarea
               rows="3"
               placeholder="Message"
-              className="block w-full rounded-md shadow-sm focus:ring focus:outline-none focus:ring-green bg-darkSlate py-2 pl-3 text-white"
+              className="block w-full rounded-md shadow-sm focus:ring focus:outline-none focus:ring-green bg-lightNavy py-2 pl-3 text-white"
             ></textarea>
             <button
               type="button"
