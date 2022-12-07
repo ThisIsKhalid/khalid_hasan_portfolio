@@ -15,6 +15,9 @@ const Navbar = () => {
         <li className="hover:line-through transition ease-in-out delay-75 hover:-translate-y-3 duration-300">
           <a href="#projects">Projects</a>
         </li>
+        <li className="hover:line-through transition ease-in-out delay-75 hover:-translate-y-3 duration-300">
+          <a href="#contact" id='contact'>Contact</a>
+        </li>
       </>
     );
 

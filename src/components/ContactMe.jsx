@@ -3,15 +3,15 @@ import { FaEnvelope, FaLocationArrow } from "react-icons/fa";
 
 const ContactMe = () => {
   return (
-    <section className="bg-darkNavy">
-      <div className="container mx-auto lg:px-0 px-5 py-5 my-10">
+    <section className="bg-darkNavy" id="contact">
+      <div className="container mx-auto lg:px-0 px-5 py-5 my-24">
         <div className="flex gap-10 mb-10">
           <h2 className="lg:text-2xl text-xl font-medium text-white">
             Contact
           </h2>
           <span className="border border-lightestSlate rotate-90"></span>
         </div>
-        <div className="grid max-w-6xl grid-cols-1 md:grid-cols-2 md:divide-x">
+        <div className="grid max-w-6xl grid-cols-1 md:grid-cols-2 md:divide-x divide-lightestSlate">
           <div className="">
             <h1 className="text-4xl text-slate font-bold mb-5">
               Got a problem to solve?

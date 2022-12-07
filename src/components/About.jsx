@@ -3,7 +3,7 @@ import khalid from '../Assets/khalid.png'
 
 const About = () => {
     return (
-      <div className="container mx-auto lg:px-0 px-5 my-10">
+      <div className="container mx-auto lg:px-0 px-5 my-24">
         <div className="flex gap-10 mb-10">
           <h2 className="lg:text-2xl text-xl font-medium text-white">
             About Me
