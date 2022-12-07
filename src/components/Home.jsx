@@ -12,7 +12,7 @@ const Home = () => {
             I build things for the web.
           </h2>
           <p className='text-lg text-lightSlate my-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quisquam deserunt maiores ex, quo quae commodi, minus vel praesentium libero nulla nemo magni unde adipisci.</p>
-          <button className="text-green border border-green px-4 py-3 mt-5">
+          <button className="text-green border border-green px-4 py-3 mt-5 uppercase">
             Download Resume
           </button>
         </div>

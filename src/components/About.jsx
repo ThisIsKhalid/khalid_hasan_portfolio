@@ -3,9 +3,9 @@ import khalid from '../Assets/khalid.png'
 
 const About = () => {
     return (
-      <div className="container mx-auto lg:px-0 px-5 ">
+      <div className="container mx-auto lg:px-0 px-5 my-10">
         <div className="flex gap-10 mb-10">
-          <h2 className="lg:text-2xl text-xl font-medium text-lightSlate">
+          <h2 className="lg:text-2xl text-xl font-medium text-white">
             About Me
           </h2>
           <span className="border border-lightestSlate rotate-90"></span>
@@ -13,7 +13,7 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row justify-between gap-10">
           <div className="md:w-1/2">
-            <h1 className="text-4xl text-lightSlate font-bold mb-5">
+            <h1 className="text-4xl text-slate font-bold mb-5">
               Front-End Developer
             </h1>
             <p className="text-lightestSlate text-lg">
