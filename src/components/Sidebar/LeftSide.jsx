@@ -5,13 +5,31 @@ const LeftSide = () => {
     return (
       <ul className="text-green fixed bottom-0 left-[3%] flex flex-col items-center gap-4 lg:text-2xl text-lg">
         <li className="transition duration-500 ease-in-out hover:-translate-y-2 ">
-          <FaGithub />
+          <a
+            href="https://github.com/ThisIsKhalid"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
         </li>
         <li className="transition duration-500 ease-in-out hover:-translate-y-2 ">
-          <FaLinkedin />
+          <a
+            href="https://www.linkedin.com/in/khalidhasan97/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
+          </a>
         </li>
-        <li className="transition duration-500 ease-in-out hover:-translate-y-2 ">
-          <FaFacebook />
+        <li className="transition duration-500 ease-in-out hover:-translate-y-2">
+          <a
+            href="https://web.facebook.com/profile.php?id=100072152402852"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaFacebook />
+          </a>
         </li>
         <li className="w-[2px] lg:h-20 h-16 bg-green"></li>
       </ul>
