@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaSignInAlt } from "react-icons/fa";
+import img from "../../Assets/k.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -39,12 +40,11 @@ const Navbar = () => {
       <div className=" px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="flex items-center justify-between">
           <a
-            href="#home"
-            className="text-2xl hover:line-through font-mono font-bold text-lightSlate border px-4 py-1"
+            href="#"
           >
-            kh
+            <img className="hover:animate-spin h-12 w-12" src={img} alt="" />
           </a>
-          <ul className="items-center hidden space-x-8 lg:flex font-mono text-lightSlate">
+          <ul className="items-center hidden space-x-8 lg:flex font-mono text-lightSlate text-lg">
             {menuList}
           </ul>
           <div className="lg:hidden">
