@@ -1,29 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FaBars, FaSignInAlt } from "react-icons/fa";
+import "./Navbar.css";
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const menuList = (
-      <>
-        <li className="hover:line-through transition ease-in-out delay-75 hover:-translate-y-3 duration-300">
-          <a href="#about">About</a>
-        </li>
-        <li className="hover:line-through transition ease-in-out delay-75 hover:-translate-y-3 duration-300">
-          <a href="#skill">Skill</a>
-        </li>
-        <li className="hover:line-through transition ease-in-out delay-75 hover:-translate-y-3 duration-300">
-          <a href="#projects">Projects</a>
-        </li>
-        <li className="hover:line-through transition ease-in-out delay-75 hover:-translate-y-3 duration-300">
-          <a href="#contact" id='contact'>Contact</a>
-        </li>
-      </>
-    );
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (this.scrollY >= 80) {
+      navbar.classList.add("scroll-navbar");
+    } else {
+      navbar.classList.remove("scroll-navbar");
+    }
+  });
 
-    return (
-      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-        <div className="relative flex items-center justify-between">
+  const menuList = (
+    <>
+      <li className="hover:line-through">
+        <a href="#">Home</a>
+      </li>
+      <li className="hover:line-through">
+        <a href="#about">About</a>
+      </li>
+      <li className="hover:line-through">
+        <a href="#skills">Skill</a>
+      </li>
+      <li className="hover:line-through">
+        <a href="#projects">Projects</a>
+      </li>
+      <li className="hover:line-through">
+        <a href="#contact">Contact</a>
+      </li>
+    </>
+  );
+
+  return (
+    <section className="fixed top-0 z-50 w-full navbar">
+      <div className=" px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+        <div className="flex items-center justify-between">
           <a
             href="#home"
             className="text-2xl hover:line-through font-mono font-bold text-lightSlate border px-4 py-1"
@@ -72,7 +86,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    );
+    </section>
+  );
 };
 
 export default Navbar;

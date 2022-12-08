@@ -1,0 +1,7 @@
+.scrollup {
+    transition: 0.4s;
+}
+
+.show-scroll {
+    bottom: 3rem;
+}

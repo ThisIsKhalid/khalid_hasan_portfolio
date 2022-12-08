@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-      <section className="container mx-auto lg:px-0 px-5 my-24">
+      <section id='home' className="container mx-auto lg:px-0 px-5 my-24">
         <div className='lg:w-3/4'>
           <h4 className="text-lg text-green font-mono">Hi, my name is</h4>
           <h1 className="lg:text-7xl sm:text-6xl text-5xl font-bold text-lightestSlate my-4">
