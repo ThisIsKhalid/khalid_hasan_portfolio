@@ -18,9 +18,6 @@ const Navbar = () => {
   const menuList = (
     <>
       <li className="hover:line-through">
-        <a href="#">Home</a>
-      </li>
-      <li className="hover:line-through">
         <a href="#about">About</a>
       </li>
       <li className="hover:line-through">
