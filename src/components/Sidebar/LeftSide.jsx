@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const LeftSide = () => {
     return (
-      <ul className="text-green fixed bottom-0 left-[3%] flex flex-col items-center gap-4 lg:text-2xl text-lg">
+      <ul className="text-slate fixed bottom-0 left-[3%] flex flex-col items-center gap-4 lg:text-2xl text-lg">
         <li className="transition duration-500 ease-in-out hover:-translate-y-2 ">
           <a
             href="https://github.com/ThisIsKhalid"
@@ -31,7 +31,7 @@ const LeftSide = () => {
             <FaFacebook />
           </a>
         </li>
-        <li className="w-[2px] lg:h-20 h-16 bg-green"></li>
+        <li className="w-[2px] lg:h-20 h-16 bg-slate"></li>
       </ul>
     );
 };

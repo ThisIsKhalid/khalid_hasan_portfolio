@@ -41,7 +41,7 @@ const ContactMe = () => {
             ></textarea>
             <button
               type="button"
-              className="text-green border border-green px-4 py-3 flex items-center justify-center gap-2 uppercase"
+              className="text-green border border-green hover:bg-lightNavy hover:text-pink hover:border-pink rounded px-4 py-3 flex items-center justify-center gap-2 uppercase"
             >
               Hit me up <FaLocationArrow />
             </button>
