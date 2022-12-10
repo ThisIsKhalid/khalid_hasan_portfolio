@@ -2,12 +2,12 @@
   background-color: #0a192f;
 }
 
-.navbar ul li a {
+.navbar li a {
     transition: all 0.3s linear;
     position: relative;
 }
 
-.navbar ul li a::after {
+.navbar li a::after {
     position: absolute;
     content: "";
     width: 0;
@@ -19,14 +19,14 @@
     transition: all 0.3s linear;
 }
 
-.navbar ul li a:hover::after {
+.navbar li a:hover::after {
     width: 100%;
 }
 
-.navbar ul li a:focus {
+.navbar li a:focus {
     background-color: transparent;
 }
 
-.navbar ul li a:hover {
+.navbar li a:hover {
     background-color: transparent;
 }
