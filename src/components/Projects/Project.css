@@ -1,6 +1,6 @@
 .item-container {
     margin: 0;
-    transition: all 1.5s linear;
+    transition: all 0.3s linear;
 }
 .item-container:hover {
     margin-top: -8px;

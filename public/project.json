@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "name": "Chem Tutor",
+    "img": "https://i.ibb.co/P9QW8cH/chem-tutor.png",
+    "live": "https://chem-tutor.web.app/",
+    "client": "https://github.com/ThisIsKhalid/chem-tutor-client",
+    "server": "https://github.com/ThisIsKhalid/chem-tutor-server",
+    "description": "This is a full stack project. Here you can find many courses about Chemistry. You can write a review but first you have to log in or create a new account. You can find all of your review in my-review section. Dont worry no one can get your personal information . So check it out and feel free to advice about how to improve this project. Thanks!!",
+    "tech": ["ReactJS", "NodeJS", "MongoDB"]
+  },
+  {
+    "id": "02",
+    "name": "Oldie Mobile",
+    "img": "https://i.ibb.co/JdwkYxw/oldie-mobile.png",
+    "live": "https://oldie-mobile.web.app/",
+    "client": "https://github.com/ThisIsKhalid/oldie-mobile-client",
+    "server": "https://github.com/ThisIsKhalid/oldie-mobile-server",
+    "description": "Here an user can buy mobile and if you are signup as a seller then you can sell mobile. A seller can add product and he/she can see his/her all product and also see buyer who are buying his/her product. Buyer can also pay for the product and can get the product his/her nearby. An Admin can see sellers and all buyers. Also he can delete reported product by an user.",
+    "tech": ["ReactJS", "NodeJS", "MongoDB"]
+  },
+  {
+    "id": "03",
+    "name": "Fancy Coder",
+    "img": "https://i.ibb.co/DLb0bgV/fancy-coder.png",
+    "live": "https://fancy-coder-2cf01.web.app/",
+    "client": "https://github.com/ThisIsKhalid/fancy-coder-client-site",
+    "server": "https://github.com/ThisIsKhalid/fancy-coder-server-site",
+    "description": "This project's main pupose is to give web-development courses, who want to learn web-development. Here you find various courses like HTML,CSS etc. It's a single page application, which I create with React.js",
+    "tech": ["ReactJS", "NodeJS"]
+  }
+]

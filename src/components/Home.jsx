@@ -12,9 +12,9 @@ const Home = () => {
             I build things for the web.
           </h2>
           <p className="text-lg text-lightSlate my-4 lg:w-3/4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-            quisquam deserunt maiores ex, quo quae commodi, minus vel
-            praesentium libero nulla nemo magni unde adipisci.
+            I like to know and understand modern technology. Since then I have
+            been working on improving my skills in web Development. When I start
+            any work, I finish it with dedication.
           </p>
           <a
             href="https://drive.google.com/file/d/16S2PEvVuv-AbYLlHENXxrisoTPMecCtD/view?usp=share_link"
