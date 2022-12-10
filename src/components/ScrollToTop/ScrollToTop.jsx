@@ -15,7 +15,7 @@ const ScroolToTop = () => {
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a
       href="#"
-      className="fixed lg:right-10 right-3 -bottom-[20%] scrollup z-10 bg-slate px-2 py-2 rounded-md opacity-80 "
+      className="fixed lg:right-10 right-3 bottom-[5%] scrollup z-10 bg-slate px-2 py-2 rounded-md opacity-80 "
     >
       <FaAngleUp className="text-darkNavy"></FaAngleUp>
     </a>
