@@ -1,0 +1,23 @@
+.item-container {
+    margin: 0;
+    transition: all 1.5s linear;
+}
+.item-container:hover {
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+.pro-img {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.pro-img img {
+    transition: all 1.5s linear;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: top center;
+}
+.item-container:hover .pro-img img {
+    object-position: bottom center;
+}
