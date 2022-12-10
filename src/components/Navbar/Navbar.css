@@ -1,3 +1,32 @@
 .scroll-navbar {
   background-color: #0a192f;
 }
+
+ul li a {
+    transition: all 0.3s linear;
+    position: relative;
+}
+
+ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #00c7ff;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: all 0.3s linear;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li a:focus {
+    background-color: transparent;
+}
+
+ul li a:hover {
+    background-color: transparent;
+}

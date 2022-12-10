@@ -17,16 +17,16 @@ const Navbar = () => {
 
   const menuList = (
     <>
-      <li className="hover:line-through">
+      <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
         <a href="#about">About</a>
       </li>
-      <li className="hover:line-through">
+      <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
         <a href="#skills">Skill</a>
       </li>
-      <li className="hover:line-through">
+      <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
         <a href="#projects">Projects</a>
       </li>
-      <li className="hover:line-through">
+      <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
         <a href="#contact">Contact</a>
       </li>
     </>
