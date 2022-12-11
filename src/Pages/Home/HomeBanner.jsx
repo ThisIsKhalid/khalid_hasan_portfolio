@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const HomeBanner = () => {
   return (
     <section id="home" className="container mx-auto lg:px-0 px-5 py-24 mt-5">
       <div>
@@ -30,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeBanner;

@@ -1,32 +1,9 @@
 import React from "react";
-import About from "./components/About";
-import ContactMe from "./components/ContactMe";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
-import ScroolToTop from "./components/ScrollToTop/ScrollToTop";
-import LeftSide from "./components/Sidebar/LeftSide";
-import Skills from "./components/Skills";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/router";
 
 const App = () => {
-  return (
-    <>
-      <Navbar></Navbar>
-
-      <aside className="hidden md:block">
-        <LeftSide></LeftSide>
-      </aside>
-      
-      <main className="max-w-5xl mx-auto">
-        <Home></Home>
-        <About></About>
-        <Skills></Skills>
-        <Projects></Projects>
-        <ContactMe></ContactMe>
-      </main>
-      <ScroolToTop></ScroolToTop>
-    </>
-  );
+  return <RouterProvider router={router}></RouterProvider>
 };
 
 export default App;

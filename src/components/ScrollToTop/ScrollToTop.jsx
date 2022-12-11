@@ -1,24 +1,24 @@
 import React from "react";
 import { FaAngleUp } from "react-icons/fa";
-import './Scroll.css'
+import { Link } from "react-router-dom";
+import "./Scroll.css";
 
 const ScroolToTop = () => {
   window.addEventListener("scroll", function () {
     const scrollUP = document.querySelector(".scrollup");
-    if (this.scrollY >= 560) {
-      scrollUP.classList.add("show-scroll");
+    if (this.scrollY >= 160) {
+      scrollUP.classList.add("showScroll");
     } else {
-      scrollUP.classList.remove("show-scroll");
+      scrollUP.classList.remove("showScroll");
     }
   });
   return (
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <a
-      href="#"
-      className="fixed lg:right-10 right-3 -bottom-[20%] scrollup z-10 bg-slate px-2 py-2 rounded-md opacity-80 "
+    <Link
+      to="/"
+      className="fixed scrollup lg:right-10 right-3 bottom-5  z-10 bg-slate px-2 py-2 rounded-md opacity-80"
     >
       <FaAngleUp className="text-darkNavy"></FaAngleUp>
-    </a>
+    </Link>
   );
 };
 

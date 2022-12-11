@@ -1,5 +1,5 @@
 import React from "react";
-import khalid from "../Assets/khalid.png";
+import khalid from "../../Assets/khalid.png";
 
 const About = () => {
   return (

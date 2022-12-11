@@ -1,13 +1,13 @@
 import React from "react";
-import bootstrapIcon from "../Assets/icons/bootstrap.png";
-import cssIcon from "../Assets/icons/css-3.png";
-import htmlIcon from "../Assets/icons/html-5.png";
-import jsIcon from "../Assets/icons/js.png";
-import mongodbIcon from "../Assets/icons/mongodb.png";
-import nextjsIcon from "../Assets/icons/nextjs.png";
-import nodeIcon from "../Assets/icons/nodejs.png";
-import reactIcon from "../Assets/icons/reactjs.png";
-import tailwindIcon from "../Assets/icons/tailwind.png";
+import bootstrapIcon from "../../Assets/icons/bootstrap.png";
+import cssIcon from "../../Assets/icons/css-3.png";
+import htmlIcon from "../../Assets/icons/html-5.png";
+import jsIcon from "../../Assets/icons/js.png";
+import mongodbIcon from "../../Assets/icons/mongodb.png";
+import nextjsIcon from "../../Assets/icons/nextjs.png";
+import nodeIcon from "../../Assets/icons/nodejs.png";
+import reactIcon from "../../Assets/icons/reactjs.png";
+import tailwindIcon from "../../Assets/icons/tailwind.png";
 
 const Skills = () => {
   return (
