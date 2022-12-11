@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaSignInAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import img from "../../../Assets/k.png";
 import "./Navbar.css";
 
@@ -18,16 +19,19 @@ const Navbar = () => {
   const menuList = (
     <>
       <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
-        <a href="#about">About</a>
+        <Link to="/home">Home</Link>
       </li>
       <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
-        <a href="#skills">Skill</a>
+        <Link to="/about">About</Link>
       </li>
       <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
-        <a href="#projects">Projects</a>
+        <Link to="/skills">Skill</Link>
       </li>
       <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
-        <a href="#contact">Contact</a>
+        <Link to="/projects">Projects</Link>
+      </li>
+      <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
+        <Link to="/contact">Contact</Link>
       </li>
     </>
   );
@@ -36,9 +40,9 @@ const Navbar = () => {
     <section className="fixed top-0 z-50 w-full navbar">
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="flex items-center justify-between">
-          <a href="/">
+          <Link to="/">
             <img className="hover:animate-spin h-12 w-12" src={img} alt="" />
-          </a>
+          </Link>
           <ul className="items-center hidden space-x-8 lg:flex font-mono text-lightSlate text-lg navbar">
             {menuList}
           </ul>

@@ -19,8 +19,8 @@ const Home = () => {
         <Skills></Skills>
         <Projects></Projects>
         <ContactMe></ContactMe>
-        <ScroolToTop></ScroolToTop>
       </main>
+      <ScroolToTop></ScroolToTop>
     </>
   );
 };

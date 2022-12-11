@@ -30,7 +30,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contact" className="container mx-auto lg:px-0 px-5 py-5 py-24">
+    <section className="container lg:max-w-5xl mx-auto lg:px-0 px-5 py-24">
       <div className="flex gap-10 mb-10">
         <h2 className="lg:text-2xl text-xl font-medium text-white">Contact</h2>
         <span className="w-40 h-px relative top-3  bg-slate"></span>
@@ -82,7 +82,7 @@ const ContactMe = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
