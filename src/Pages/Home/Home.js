@@ -1,6 +1,7 @@
 import React from "react";
 import ScroolToTop from "../../components/ScrollToTop/ScrollToTop";
 import LeftSide from "../../components/Sidebar/LeftSide";
+import Blogs from "../Blogs/Blogs";
 import About from "./About";
 import ContactMe from "./ContactMe";
 import HomeBanner from "./HomeBanner";
@@ -18,6 +19,7 @@ const Home = () => {
         <About></About>
         <Skills></Skills>
         <Projects></Projects>
+        <Blogs></Blogs>
         <ContactMe></ContactMe>
       </main>
       <ScroolToTop></ScroolToTop>

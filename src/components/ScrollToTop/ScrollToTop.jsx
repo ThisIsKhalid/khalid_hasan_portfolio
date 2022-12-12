@@ -1,23 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
 import "./Scroll.css";
 
 const ScroolToTop = () => {
-  window.addEventListener("scroll", function () {
-    const scrollUP = document.querySelector(".scrollup");
-    if (this.scrollY >= 160) {
-      scrollUP.classList.add("showScroll");
-    } else {
-      scrollUP.classList.remove("showScroll");
-    }
-  });
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    });
+  }, []);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <a
-      href="#home"
-      className="fixed scrollup lg:right-10 right-3 -bottom-10  z-10 bg-slate px-2 py-2 rounded-md opacity-80"
-    >
-      <FaAngleUp className="text-darkNavy"></FaAngleUp>
-    </a>
+    <div className="top-to-btm">
+      {" "}
+      {showTopBtn && (
+        <FaAngleUp className="h-9 w-9 rounded-full bg-darkSlate text-navy hover:bg-lightestNavy hover:text-blue fixed right-[3%] bottom-[5%] hover:animate-none icon-style" onClick={goToTop} />
+      )}{" "}
+    </div>
   );
 };
 

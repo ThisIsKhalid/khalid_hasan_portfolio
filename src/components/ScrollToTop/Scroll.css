@@ -1,7 +1,27 @@
-.scrollup {
-    transition: 0.4s;
+.top-to-btm{
+  position: relative;
 }
 
-.showScroll {
-    bottom: 3rem;
+.icon-style{
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+}
+
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }

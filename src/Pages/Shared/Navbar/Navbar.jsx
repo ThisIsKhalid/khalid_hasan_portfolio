@@ -31,6 +31,9 @@ const Navbar = () => {
         <Link to="/projects">Projects</Link>
       </li>
       <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
+        <Link to="/blogs">Blogs</Link>
+      </li>
+      <li className="hover:text-blue flex items-center gap-1 font-semibold hover:-translate-y-1 transition duration-700 ease-in-out">
         <Link to="/contact">Contact</Link>
       </li>
     </>

@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeBanner = () => {
   return (
-    <section id="home" className="container mx-auto lg:px-0 px-5 py-24 mt-5">
+    <section className="container mx-auto lg:px-0 px-5 py-24 mt-5">
       <div>
         <h4 className="text-lg text-green font-mono">Hi, my name is</h4>
         <h1 className="lg:text-7xl sm:text-6xl text-5xl font-bold text-lightestSlate my-4">
