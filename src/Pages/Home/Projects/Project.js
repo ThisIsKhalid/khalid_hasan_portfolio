@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Project.css";
 
 const Project = ({ project }) => {
-  const {name, live, client, server, description, img, tech} = project;
+  const {id, name, live, client, server, description, img, tech} = project;
   return (
     <div className="item-container m-0 bg-lightNavy p-4 rounded-md">
       <div className="pro-img">
@@ -27,9 +28,11 @@ const Project = ({ project }) => {
           <p className="hover:text-pink">Client</p>
           <p className="hover:text-pink">Server</p>
         </div>
-        <button className="text-green border border-green hover:bg-lightNavy hover:text-pink hover:border-pink rounded px-1 py-1">
-          See More
-        </button>
+        <Link to={`/projects/${project}`}>
+          <button className="text-green border border-green hover:bg-lightNavy hover:text-pink hover:border-pink rounded px-1 py-1">
+            See More
+          </button>
+        </Link>
       </div>
     </div>
   );
