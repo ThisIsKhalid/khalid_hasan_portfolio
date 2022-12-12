@@ -5,7 +5,11 @@ import "./Project.css";
 const Project = ({ project }) => {
   const {id, name, live, client, server, description, img, tech} = project;
   return (
-    <div className="item-container m-0 bg-lightNavy p-4 rounded-md">
+    <div
+      className="item-container m-0 bg-lightNavy p-4 rounded-md"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+    >
       <div className="pro-img">
         <img src={img} alt="" />
       </div>

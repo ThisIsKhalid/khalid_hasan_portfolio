@@ -5,15 +5,15 @@ const ProjectDetails = () => {
 
     const {id} = useParams();
 
-    const [project, setProject] = useState({});
+    // const [project, setProject] = useState({});
 
-    useEffect(() => {
-        fetch(`project.json/${id}`)
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-        })
-    }, [id])
+    // useEffect(() => {
+    //     fetch(`project.json/${id}`)
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         console.log(data);
+    //     })
+    // }, [id])
 
     return (
       <section className="container lg:max-w-5xl mx-auto lg:px-0 px-5 py-24">

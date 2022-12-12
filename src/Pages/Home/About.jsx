@@ -4,13 +4,17 @@ import khalid from "../../Assets/khalid.png";
 const About = () => {
   return (
     <section className="container lg:max-w-5xl mx-auto lg:px-0 px-5 py-24">
-      <div className="flex gap-10 mb-10">
+      <div
+        className="flex gap-10 mb-10"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <h2 className="lg:text-2xl text-xl font-medium text-white">About Me</h2>
         <span className="w-40 h-px relative top-3  bg-slate"></span>
       </div>
 
       <div className="flex flex-col md:flex-row justify-between gap-10">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2" data-aos="fade-up" data-aos-duration="1500">
           <h1 className="text-4xl text-slate font-bold mb-5">
             Front-End Developer
           </h1>
@@ -23,7 +27,11 @@ const About = () => {
             new skills.
           </p>
         </div>
-        <div className=" md:w-1/2">
+        <div
+          className=" md:w-1/2"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center">
             <div className="border-2 border-blue w-2/3 rounded">
               <img

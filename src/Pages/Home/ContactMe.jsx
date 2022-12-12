@@ -31,12 +31,16 @@ const ContactMe = () => {
 
   return (
     <section className="container lg:max-w-5xl mx-auto lg:px-0 px-5 py-24">
-      <div className="flex gap-10 mb-10">
+      <div
+        className="flex gap-10 mb-10"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <h2 className="lg:text-2xl text-xl font-medium text-white">Contact</h2>
         <span className="w-40 h-px relative top-3  bg-slate"></span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:divide-x divide-lightestSlate">
-        <div>
+        <div data-aos="fade-up-right" data-aos-duration="2000">
           <h1 className="text-4xl text-slate font-bold mb-5">
             Got a problem to solve?
           </h1>
@@ -49,7 +53,7 @@ const ContactMe = () => {
             <span>khalid.hasan9753@gmail.com</span>
           </p>
         </div>
-        <div>
+        <div data-aos="fade-down-left" data-aos-duration="2000">
           <form
             ref={form}
             onSubmit={handleSendEmail}

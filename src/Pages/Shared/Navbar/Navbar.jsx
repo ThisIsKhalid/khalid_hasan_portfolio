@@ -43,10 +43,14 @@ const Navbar = () => {
     <section className="fixed top-0 z-50 w-full navbar">
       <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="flex items-center justify-between">
-          <Link to="/">
+          <Link to="/" data-aos="fade-down" data-aos-duration="2000">
             <img className="hover:animate-spin h-12 w-12" src={img} alt="" />
           </Link>
-          <ul className="items-center hidden space-x-8 lg:flex font-mono text-lightSlate text-lg navbar">
+          <ul
+            className="items-center hidden space-x-8 lg:flex font-mono text-lightSlate text-lg navbar"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             {menuList}
           </ul>
           <div className="lg:hidden">

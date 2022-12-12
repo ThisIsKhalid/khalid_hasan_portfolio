@@ -3,7 +3,11 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const LeftSide = () => {
     return (
-      <ul className="text-slate fixed bottom-0 left-[3%] flex flex-col items-center gap-4 lg:text-2xl text-lg">
+      <ul
+        className="text-slate fixed bottom-0 left-[3%] flex flex-col items-center gap-4 lg:text-2xl text-lg"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <li className="transition duration-500 ease-in-out hover:-translate-y-2 ">
           <a
             href="https://github.com/ThisIsKhalid"

@@ -3,7 +3,7 @@ import React from "react";
 const HomeBanner = () => {
   return (
     <section className="container mx-auto lg:px-0 px-5 py-24 mt-5">
-      <div>
+      <div data-aos="fade-right" data-aos-duration="2000">
         <h4 className="text-lg text-green font-mono">Hi, my name is</h4>
         <h1 className="lg:text-7xl sm:text-6xl text-5xl font-bold text-lightestSlate my-4">
           Khalid Hasan
@@ -21,7 +21,11 @@ const HomeBanner = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="text-green border border-green hover:bg-lightNavy hover:text-pink hover:border-pink rounded px-4 py-3 mt-5 uppercase">
+          <button
+            className="text-green border border-green hover:bg-lightNavy hover:text-pink hover:border-pink rounded px-4 py-3 mt-5 uppercase"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
             My Resume
           </button>
         </a>
