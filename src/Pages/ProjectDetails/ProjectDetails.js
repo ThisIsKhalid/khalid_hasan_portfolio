@@ -1,27 +1,51 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const ProjectDetails = () => {
+  const { id } = useParams();
 
-    const {id} = useParams();
+  const [project, setProject] = useState({});
+  const {
+    name,
+    web,
+    tab,
+    mobile,
+    live,
+    client,
+    server,
+    description,
+    features,
+    tech,
+  } = project;
 
-    // const [project, setProject] = useState({});
+  useEffect(() => {
+    fetch(`http://localhost:5000/projects/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setProject(data);
+      });
+  }, [id]);
 
-    // useEffect(() => {
-    //     fetch(`project.json/${id}`)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //     })
-    // }, [id])
+  console.log(project);
 
-    return (
-      <section className="container lg:max-w-5xl mx-auto lg:px-0 px-5 py-24">
-        <div className=' h-96 bg-lightNavy shadow-md shadow-lightestNavy rounded-md'>
-          <h1 className="text-blue">thsi is project details </h1>
+  return (
+    <section className="container lg:max-w-5xl mx-auto lg:px-0 px-5 py-24">
+      <div className=" bg-lightNavy shadow-md shadow-lightestNavy rounded-md px-5  pt-5">
+        <div className="flex flex-wrap lg:justify-between gap-5">
+          <div className="lg:w-1/2">
+            <img className="rounded" src={web} alt="" />
+          </div>
+
+          <img className="h-60 rounded" src={tab} alt="" />
+
+          <img className="h-60 rounded" src={mobile} alt="" />
         </div>
-      </section>
-    );
+        <div className="mt-6">
+          <h2 className="text-green text-2xl font-bold">{name}</h2>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default ProjectDetails;
